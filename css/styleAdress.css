@@ -78,9 +78,65 @@
 }
 
 
-
-
 /*Стили карты*/
 .map{
   margin-top: 4%;
+}
+
+/*Оформление футера  компьютерная версия*/
+/*Для рприжатия его к низу*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+/*Для рприжатия его к низу*/
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 210px;
+}
+footer {
+	background: #DCDCDC;
+	color: dimgray;
+	/*font-size: 11px;*/
+}
+/*Для рприжатия его к низу*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 210px;
+  background-color: #f5f5f5;
+}
+
+/*Для прижатия его к низу*/
+#footerMob {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   /*Set the fixed height of the footer here*/
+  height: 10px;
+  background-color: #f5f5f5;
+  /*margin-bottom: 10px;*/
+}
+
+
+
+a {
+	color: dimgray;
+}
+
+a:hover {
+	color: #696969;
+}
+
+#sitemap, #contactss{
+  text-align: center;
+  font-size: 20px;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 17px;
+  color: #000000;
 }
