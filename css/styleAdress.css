@@ -1,0 +1,86 @@
+.zagolovok{
+  background: linear-gradient(to top, #191970, #1E90FF);
+}
+
+/*СТИЛИ КОМПЬЮТЕРНОЙ ВЕРСИИ*/
+.sign {
+  font-size: 2.4vw; /* 3% of viewport width */
+  font-family: DS Sofachrome, Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  /*font-weight: bold;*/
+  background: linear-gradient(to top, #808080, #F5F5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -1px -1px 0, #F5F5F5,
+             -2px -2px 1px, #F5F5F5;
+}
+
+/*стили наполенния страницы adress для главной версии версии*/
+.adress{
+  font-size: 30px ;
+  font-family: MicraDi, Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  color: #191970;
+  text-shadow: 0px 2px 3px #777;
+}
+
+/*СТИЛИ МОБИЛЬНОЙ ВЕРСИИ*/
+
+/*стили наполенния страницы adress для мобильной версии*/
+.signMob{
+  font-size: 3.5vw; /* 3% of viewport width */
+  font-family: DS Sofachrome, Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: linear-gradient(to top, #808080, #F5F5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -1px -1px 0, #F5F5F5,
+             -2px -2px 1px, #F5F5F5;
+}
+
+.adressMob{
+  font-size: 15px;
+  font-family: MicraDi, Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  color: #191970;
+  text-shadow: 0px 2px 3px #777;
+}
+
+
+/*Стили навигации*/
+
+/*Цвет навигации*/
+.navbar-default {
+    background-color: #191970;
+    border-color: #191970;
+    border-radius: 0px;
+
+
+}
+/* Цвет пунктов навигационного меню */
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+    /*font-size: 1.5vw;*/
+    font-size: 20px;
+    font-family: MicraDi, Tahoma, Geneva, sans-serif;
+}
+
+/* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #6495ED;
+}
+
+/* Цвет полосочек в кнопочке, которая открывает меню */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+
+
+
+
+/*Стили карты*/
+.map{
+  margin-top: 4%;
+}

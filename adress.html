@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Адрес</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/styleAdress.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <!-- заголовок шапка сайта Компьютерная версия-->
+  <div class="container-fluid zagolovok">
+    <div class="row">
+      <!-- <div class="col-lg-1 col-md-1 hidden-sm hidden-xs sign"></div> -->
+      <div class="col-lg-6 col-md-6 hidden-sm hidden-xs sign" style="text-align:center">АВТОМОБИЛЬНЫЕ</div>
+      <div class="col-lg-6 col-md-6 hidden-sm hidden-xs sign" style="text-align:center">ГРУЗОПЕРЕВОЗКИ</div>
+      <!-- <div class="col-lg-1 col-md-1 hidden-sm hidden-xs sign"></div> -->
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+      <div class="col-lg-10 col-md-10 hidden-sm hidden-xs sign" style="text-align:center">ООО  АВТОКОЛОННА  №1686</div>
+      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+    </div>
+
+  </div>
+
+  <!-- заголовок шапка сайта Мобильная версия-->
+  <div class="container-fluid zagolovok">
+    <div class="row">
+      <div class="hidden-lg hidden-md col-sm-12 col-xs-12 signMob" style="text-align:center">АВТОМОБИЛЬНЫЕ ГРУЗОПЕРЕВОЗКИ</div>
+    </div>
+
+    <div class="row">
+      <div class="hidden-lg hidden-md col-sm-2 col-xs-2"></div>
+      <div class="hidden-lg hidden-md col-sm-8 col-xs-8 signMob" style="text-align:center">ООО  АВТОКОЛОННА  №1686</div>
+      <div class="hidden-lg hidden-md col-sm-2 col-xs-2"></div>
+    </div>
+
+  </div>
+
+  <!-- линия отделяющая заголовок от меню -->
+  <hr style = " border: none;  background-color: #1E90FF; margin: 0; height: 2px">
+
+<!--Меню навигации по сайту-->
+<div class = "container-fluid">
+  <div class="row">
+
+    <div class = "navbar navbar-default ">
+        <div class = "container" style="margin-left: -10px">
+            <div class = "navbar-header">
+              <button type = "button" class = "navbar-toggle" data-toggle="collapse" data-target="#responsive-menu" >
+
+                  <span class = "sr-only">Открыть навигацию</span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+              </button>
+              <!-- <a class = "navbar-brand" href = "#">Название компании</div> -->
+            </div>
+            <div class = "collapse navbar-collapse" id = "responsive-menu">
+                <ui class = "nav navbar-nav">
+                  <li id = "mainN"><a href = "/">Главная</a></li>
+                  <li id = "contactsN"><a href = "/contacts">Контакты</a></li>
+                  <li id = "adressN"><a href = "/adress">Адрес</a></li>
+                  <li id = "trackingN"><a href = "/tracking">Отслеживание груза</a></li>
+                </ui>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--Тело сайта-->
+  <!--Адрес  и карта компьбтерная версия-->
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6 hidden-sm hidden-xs" style = "margin-left:10px; text-align:center">
+
+        <div class="spisok">
+          <div class = "adress">Находимся по адресу: </div>
+          <div class = "adress">Волгоградская область,</div>
+          <div class = "adress">город Волгоград,</div>
+          <div class = "adress">ул. Лесогоркая, д. 83</div>
+        </div>
+
+      </div>
+      <!-- карта для компбютерной версии и планшета -->
+      <div class="col-lg-5 col-md-5 hidden-sm hidden-xs" style = "margin-right:10px">
+        <div class="map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a815f0a748cc9d8e5e54064ef266150c0f2ce5e21c7c8e288fe91a3c1598a43&amp;width=100%25&amp;height=428&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+    </div>
+
+  </div>
+
+<!-- Мобильная версия наполнения -->
+<div class="container-fluid adressMob">
+
+  <div class="row">
+    <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
+    <div class="hidden-lg hidden-md col-xs-12 col-sm-12">Находимся по адрессу:</div>
+    <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
+  </div>
+
+  <div class="row">
+    <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
+    <div class="hidden-lg hidden-md col-xs-12 col-sm-12">Волгоградская область, город Волгоград, ул. Лесогорская, д.83</div>
+    <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
+  </div>
+
+</div>
+
+<!-- Расположение карты при мобильной версии -->
+<div class="container-fluid mapMob">
+
+  <div class="row">
+    <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
+    <div class="hidden-lg hidden-md col-xs-12 col-sm-12">
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a815f0a748cc9d8e5e54064ef266150c0f2ce5e21c7c8e288fe91a3c1598a43&amp;width=100%25&amp;height=428&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+    </div>
+    <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
+  </div>
+
+</div>
+
+
+<div style = "height:200px"> </div>
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="scrypt/jquery-3.2.1.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
