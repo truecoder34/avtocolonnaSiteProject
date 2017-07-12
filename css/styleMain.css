@@ -1,0 +1,144 @@
+.zagolovok{
+  background: linear-gradient(to top, #191970, #1E90FF);
+}
+
+/*СТИЛИ КОМПЬЮТЕРНОЙ ВЕРСИИ*/
+.sign {
+  font-size: 2.4vw; /* 3% of viewport width */
+  font-family: DS Sofachrome, Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  /*font-weight: bold;*/
+  background: linear-gradient(to top, #808080, #F5F5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -1px -1px 0, #F5F5F5,
+             -2px -2px 1px, #F5F5F5;
+}
+
+.directions{
+  font-size: 30px ;
+  font-family: MicraDi, Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  color: #191970;
+  text-shadow: 0px 2px 3px #777
+}
+
+.signMob{
+  font-size: 3.5vw; /* 3% of viewport width */
+  font-family: DS Sofachrome, Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: linear-gradient(to top, #808080, #F5F5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -1px -1px 0, #F5F5F5,
+             -2px -2px 1px, #F5F5F5;
+}
+
+.directionsMob{
+  font-size: 15px;
+  font-family: MicraDi, Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  color: #191970;
+  text-shadow: 0px 2px 3px #777;
+}
+
+/*Стили навигации*/
+
+/*Цвет навигации*/
+.navbar-default {
+    background-color: #191970;
+    border-color: #191970;
+    border-radius: 0px;
+
+
+}
+/* Цвет пунктов навигационного меню */
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+    /*font-size: 1.5vw;*/
+    font-size: 20px;
+    font-family: MicraDi, Tahoma, Geneva, sans-serif;
+}
+
+/* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #6495ED;
+}
+
+/* Цвет полосочек в кнопочке, которая открывает меню */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+
+
+
+/*Оформление футера  компьютерная версия*/
+/*Для рприжатия его к низу*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+/*Для рприжатия его к низу*/
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 210px;
+}
+footer {
+	background: #DCDCDC;
+	color: dimgray;
+	/*font-size: 11px;*/
+}
+/*Для рприжатия его к низу*/
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 210px;
+  background-color: #f5f5f5;
+}
+
+/*Для прижатия его к низу*/
+#footerMob {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   /*Set the fixed height of the footer here*/
+  height: 10px;
+  background-color: #f5f5f5;
+  /*margin-bottom: 10px;*/
+}
+
+
+
+a {
+	color: dimgray;
+}
+
+a:hover {
+	color: #696969;
+}
+
+#sitemap, #contactss{
+  text-align: center;
+  font-size: 20px;
+}
+
+.copyright{
+  text-align: center;
+  font-size: 17px;
+  color: #000000;
+}
+
+
+
+.carousel-inner{
+  width:100%;
+  max-height: 650px !important;
+}
+.imgSlider{
+  padding-left:0 !important;
+  padding-right:0 !important;
+}

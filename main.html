@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Главная</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/styleMain.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <!-- заголовок шапка сайта Компьютерная версия-->
+  <div class="container-fluid zagolovok">
+    <div class="row">
+      <!-- <div class="col-lg-1 col-md-1 hidden-sm hidden-xs sign"></div> -->
+      <div class="col-lg-6 col-md-6 hidden-sm hidden-xs sign" style="text-align:center">АВТОМОБИЛЬНЫЕ</div>
+      <div class="col-lg-6 col-md-6 hidden-sm hidden-xs sign" style="text-align:center">ГРУЗОПЕРЕВОЗКИ</div>
+      <!-- <div class="col-lg-1 col-md-1 hidden-sm hidden-xs sign"></div> -->
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+      <div class="col-lg-10 col-md-10 hidden-sm hidden-xs sign" style="text-align:center">ООО АВТОКОЛОННА №1686</div>
+      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+    </div>
+
+  </div>
+
+  <!-- заголовок шапка сайта Мобильная версия-->
+  <div class="container-fluid zagolovok">
+    <div class="row">
+      <div class="hidden-lg hidden-md col-sm-12 col-xs-12 signMob" style="text-align:center">АВТОМОБИЛЬНЫЕ ГРУЗОПЕРЕВОЗКИ</div>
+    </div>
+
+    <div class="row">
+      <div class="hidden-lg hidden-md col-sm-2 col-xs-2"></div>
+      <div class="hidden-lg hidden-md col-sm-8 col-xs-8 signMob" style="text-align:center">ООО АВТОКОЛОННА №1686</div>
+      <div class="hidden-lg hidden-md col-sm-2 col-xs-2"></div>
+    </div>
+
+  </div>
+
+  <!-- линия отделяющая заголовок от меню -->
+  <hr style=" border: none;  background-color: #1E90FF; margin: 0; height: 2px">
+
+  <!--Меню навигации по сайту-->
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="navbar navbar-default ">
+        <div class="container" style="margin-left: -10px">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+
+                  <span class = "sr-only">Открыть навигацию</span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+                  <span class = "icon-bar"></span>
+              </button>
+            <!-- <a class = "navbar-brand" href = "#">Название компании</div> -->
+          </div>
+          <div class="collapse navbar-collapse" id="responsive-menu">
+            <ui class="nav navbar-nav">
+              <li id="mainN"><a href="/">Главная</a></li>
+              <li id="contactsN"><a href="/contacts">Контакты</a></li>
+              <li id="adressN"><a href="/adress">Адрес</a></li>
+              <li id="trackingN"><a href="/tracking">Отслеживание груза</a></li>
+            </ui>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Тело сайта-->
+  <!--направления перевозок компьютерная версия-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+      <div class="col-lg-9 col-md-9 hidden-sm hidden-xs">
+        <div class="spisok">
+          <div class="directions">Грузоперевозки по Волгограду</div>
+          <div class="directions">Грузоперевозки по области</div>
+          <div class="directions">Грузоперевозки по регионам России</div>
+          <div class="directions">Грузоперевозки по Европе</div>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+    </div>
+  </div>
+
+  <!--направления перевозок мобильная версия-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+        <div class="spisok">
+          <div class="directionsMob">Грузоперевозки по Волгограду</div>
+          <div class="directionsMob">Грузоперевозки по области</div>
+          <div class="directionsMob">Грузоперевозки по регионам России</div>
+          <div class="directionsMob">Грузоперевозки по Европе</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Слайдер перелистывания фоток -->
+  <div class="container-fluid imgSlider" >
+    <!-- <h2>Carousel Example</h2> -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:blue"></li>
+        <li data-target="#myCarousel" data-slide-to="1" style="background-color:blue"></li>
+        <li data-target="#myCarousel" data-slide-to="2" style="background-color:blue"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/tyagach.jpg" alt="Los Angeles" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="img/GPR1679x600.png" alt="Chicago" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="ny.jpg" alt="New york" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <!-- Подвал для компьютерной версии -->
+    <div id="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="sitemap">
+            <h1 style="font-size:25px">ООО Автоколонна №1686</h1>
+            <div><a href="/">Главная</a></div>
+            <div><a href="/contacts">Контакты</a></div>
+            <div><a href="/tracking">Адресс</a></div>
+            <div><a href="/">Отслеживание груза</a></div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="contactss">
+            <h1 style="font-size:25px">Контакты</h1>
+            <div>ak1686@insatcom-v.ru</div>
+            <div>8-8442-54-70-66 (Приемная)</div>
+            <div>8-8442-78-70-11 (Диспетчерская)</div>
+            <div>8-8442-78-66-18 (Отдел кадров)</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 hidden-sm hidden-xs copyright">
+            © Оформление сайта. ООО Автоколонна №1686, 2017
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Подвал для мобильной версии -->
+    <div id="footerMob">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="sitemap">
+            <h1 style="font-size:25px">ООО Автоколонна №1686</h1>
+            <div><a href="/">Главная</a></div>
+            <div><a href="/contacts">Контакты</a></div>
+            <div><a href="/tracking">Адресс</a></div>
+            <div><a href="/">Отслеживание груза</a></div>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="contactss">
+            <h1 style="font-size:25px">Контакты</h1>
+            <div>ak1686@insatcom-v.ru</div>
+            <div>8-8442-54-70-66 (Приемная)</div>
+            <div>8-8442-78-70-11 (Диспетчерская)</div>
+            <div>8-8442-78-66-18 (Отдел кадров)</div>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12 copyright">
+            © Оформление сайта. ООО Автоколонна №1686, 2017
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="scrypt/jquery-3.2.1.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

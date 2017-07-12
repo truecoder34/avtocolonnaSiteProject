@@ -10,7 +10,8 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link href="css/styleContacts.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,69 +23,76 @@
 
 <body>
 
-  <!-- заголовок шапка сайта-->
+  <!-- заголовок шапка сайта Компьютерная версия-->
   <div class="container-fluid zagolovok">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sign" style="text-align:right">АВТОМОБИЛЬНЫЕ</div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sign" style="text-align:left">ГРУЗОПЕРЕВОЗКИ</div>
+      <!-- <div class="col-lg-1 col-md-1 hidden-sm hidden-xs sign"></div> -->
+      <div class="col-lg-6 col-md-6 hidden-sm hidden-xs sign" style="text-align:center">АВТОМОБИЛЬНЫЕ</div>
+      <div class="col-lg-6 col-md-6 hidden-sm hidden-xs sign" style="text-align:center">ГРУЗОПЕРЕВОЗКИ</div>
+      <!-- <div class="col-lg-1 col-md-1 hidden-sm hidden-xs sign"></div> -->
     </div>
 
     <div class="row">
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 sign" style="text-align:center">ООО  АВТОКОЛОННА  №1686</div>
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+      <div class="col-lg-10 col-md-10 hidden-sm hidden-xs sign" style="text-align:center">ООО АВТОКОЛОННА №1686</div>
+      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
     </div>
 
   </div>
+
+  <!-- заголовок шапка сайта Мобильная версия-->
+  <div class="container-fluid zagolovok">
+    <div class="row">
+      <div class="hidden-lg hidden-md col-sm-12 col-xs-12 signMob" style="text-align:center">АВТОМОБИЛЬНЫЕ ГРУЗОПЕРЕВОЗКИ</div>
+    </div>
+
+    <div class="row">
+      <div class="hidden-lg hidden-md col-sm-2 col-xs-2"></div>
+      <div class="hidden-lg hidden-md col-sm-8 col-xs-8 signMob" style="text-align:center">ООО АВТОКОЛОННА №1686</div>
+      <div class="hidden-lg hidden-md col-sm-2 col-xs-2"></div>
+    </div>
+
+  </div>
+
   <!-- линия отделяющая заголовок от меню -->
-  <hr style = " border: none;  background-color: #1E90FF; margin: 0; height: 2px">
+  <hr style=" border: none;  background-color: #1E90FF; margin: 0; height: 2px">
 
-<!--Меню навигации по сайту-->
-<div class = "container-fluid">
-  <div class="row">
+  <!--Меню навигации по сайту-->
+  <div class="container-fluid">
+    <div class="row">
 
-    <div class = "navbar navbar-default">
-        <div class = "container" style="margin-left: -10px">
-            <div class = "navbar-header">
-              <button type = "button" class = "navbar-toggle" data-toggle="collapse" data-target="#responsive-menu" >
+      <div class="navbar navbar-default ">
+        <div class="container" style="margin-left: -10px">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
 
                   <span class = "sr-only">Открыть навигацию</span>
                   <span class = "icon-bar"></span>
                   <span class = "icon-bar"></span>
                   <span class = "icon-bar"></span>
               </button>
-              <!-- <a class = "navbar-brand" href = "#">Название компании</div> -->
-            </div>
-            <div class = "collapse navbar-collapse" id = "responsive-menu">
-                <ui class = "nav navbar-nav">
-                  <li id = "mainN"><a href = "/">Главная</a></li>
-                  <li id = "contactsN"><a href = "/contacts">Контакты</a></li>
-                  <li id = "adressN"><a href = "/adress">Адрес</a></li>
-                  <li id = "trackingN"><a href = "/tracking">Отслеживание груза</a></li>
-                </ui>
-            </div>
+            <!-- <a class = "navbar-brand" href = "#">Название компании</div> -->
+          </div>
+          <div class="collapse navbar-collapse" id="responsive-menu">
+            <ui class="nav navbar-nav">
+              <li id="mainN"><a href="/">Главная</a></li>
+              <li id="contactsN"><a href="/contacts">Контакты</a></li>
+              <li id="adressN"><a href="/adress">Адрес</a></li>
+              <li id="trackingN"><a href="/tracking">Отслеживание груза</a></li>
+            </ui>
+          </div>
         </div>
+      </div>
     </div>
   </div>
-</div>
 
+  
 
-  <!-- Заголовок НАШИ КОНТАКТЫ -->
-  <div class="container-fluid contHeader">
-  <div class="row">
-   <div class = "col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-   <div class = "col-lg-10 col-md-10 col-sm-10 col-xs-10">
-     <!-- <h1 class="ourContacts">Наши контакты:</h1> -->
-   </div>
-   <div class = "col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
-  </div>
-</div>
-
-<!-- Перечисление контактов -->
+<!-- Перечисление контактов  компьютерная версия -->
 <div class="container-fluid numbers">
   <div class="row">
-    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
-    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+    <div class="col-lg-9 col-md-9 hidden-sm hidden-xs">
       <div class="spisok">
         <div class="po">8-8442-54-70-66 (Приемная)</div>
         <div class="po">8-8442-78-70-11 (Диспетчерская)</div>
@@ -94,13 +102,81 @@
         <div class="po">Почта: ak1686@insatcom-v.ru</div>
       </div>
     </div>
-    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+    <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
 
   </div>
 </div>
 
+<div class="container-fluid numbersMob">
+  <div class="row">
+    <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+      <div class="spisok">
+        <div class="po">8-8442-54-70-66 (Приемная)</div>
+        <div class="po">8-8442-78-70-11 (Диспетчерская)</div>
+        <div class="po">8-8442-54-70-27 (Бухгалтерия)</div>
+        <div class="po">8-8442-78-66-18 (Отдел кадров)</div>
+        <div class="po">Факс: (8442)54-70-50</div>
+        <div class="po">Почта: ak1686@insatcom-v.ru</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<footer>
+  <!-- Подвал для компьютерной версии -->
+  <div id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="sitemap">
+          <h1 style="font-size:25px">ООО Автоколонна №1686</h1>
+          <div><a href="/">Главная</a></div>
+          <div><a href="/contacts">Контакты</a></div>
+          <div><a href="/tracking">Адресс</a></div>
+          <div><a href="/">Отслеживание груза</a></div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="contactss">
+          <h1 style="font-size:25px">Контакты</h1>
+          <div>ak1686@insatcom-v.ru</div>
+          <div>8-8442-54-70-66 (Приемная)</div>
+          <div>8-8442-78-70-11 (Диспетчерская)</div>
+          <div>8-8442-78-66-18 (Отдел кадров)</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 hidden-sm hidden-xs copyright">
+           © Оформление сайта. ООО Автоколонна №1686, 2017
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Подвал для мобильной версии -->
+<div id="footerMob">
+<div class="container-fluid">
+  <div class="row">
+    <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="sitemap">
+      <h1 style="font-size:25px">ООО Автоколонна №1686</h1>
+      <div><a href="/">Главная</a></div>
+      <div><a href="/contacts">Контакты</a></div>
+      <div><a href="/tracking">Адресс</a></div>
+      <div><a href="/">Отслеживание груза</a></div>
+    </div>
+    <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="contactss">
+      <h1 style="font-size:25px">Контакты</h1>
+      <div>ak1686@insatcom-v.ru</div>
+      <div>8-8442-54-70-66 (Приемная)</div>
+      <div>8-8442-78-70-11 (Диспетчерская)</div>
+      <div>8-8442-78-66-18 (Отдел кадров)</div>
+    </div>
+    <div class="hidden-lg hidden-md col-sm-12 col-xs-12 copyright">
+       © Оформление сайта. ООО Автоколонна №1686, 2017
+    </div>
+  </div>
+</div>
+</div>
+</footer>
 
 
 

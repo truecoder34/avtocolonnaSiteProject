@@ -13,7 +13,7 @@ app.use(express.static(__dirname)); // Путь относительно кот�
 Делаем это чтобы на сайте прогрузилась вся наша верстка------*/
 app.get("/", function(req,res){
   res.setHeader("Content-Type","text/html");
-  res.sendFile(__dirname +"/index.html");
+  res.sendFile(__dirname +"/main.html");
 })
 /*------Конец этого блока------*/
 
