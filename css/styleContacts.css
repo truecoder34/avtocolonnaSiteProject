@@ -1,44 +1,50 @@
-.zagolovok{
+.zagolovok {
   background: linear-gradient(to top, #191970, #1E90FF);
 }
 
+
 /*СТИЛИ КОМПЬЮТЕРНОЙ ВЕРСИИ*/
+
 .sign {
-  font-size: 2.4vw; /* 3% of viewport width */
+  font-size: 2.4vw;
+  /* 3% of viewport width */
   font-family: DS Sofachrome, Tahoma, Geneva, sans-serif;
   text-transform: uppercase;
   /*font-weight: bold;*/
   background: linear-gradient(to top, #808080, #F5F5F5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: -1px -1px 0, #F5F5F5,
-             -2px -2px 1px, #F5F5F5;
+  text-shadow: -1px -1px 0, #F5F5F5, -2px -2px 1px, #F5F5F5;
 }
 
-.numbers{
-  font-size: 30px ;
+.numbers {
+  font-size: 30px;
   font-family: MicraDi, Tahoma, Geneva, sans-serif;
   font-weight: bold;
   color: #191970;
   text-shadow: 0px 2px 3px #777
 }
 
+
 /*СТИЛИ МОБИЛЬНОЙ ВЕРСИИ*/
 
+
 /*стили наполенния страницы contacts для мобильной версии*/
-.signMob{
-  font-size: 3.5vw; /* 3% of viewport width */
+
+.signMob {
+  font-size: 15px;
+  /* 3% of viewport width */
   font-family: DS Sofachrome, Tahoma, Geneva, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  background: linear-gradient(to top, #808080, #F5F5F5);
+  background-color: #F5F5F5;
+  /*background: linear-gradient(to top, #808080, #F5F5F5);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: -1px -1px 0, #F5F5F5,
-             -2px -2px 1px, #F5F5F5;
+  text-shadow: -1px -1px 0, #F5F5F5, -2px -2px 1px, #F5F5F5;
 }
 
-.numbersMob{
+.numbersMob {
   font-size: 15px;
   font-family: MicraDi, Tahoma, Geneva, sans-serif;
   font-weight: bold;
@@ -46,54 +52,70 @@
   text-shadow: 0px 2px 3px #777;
 }
 
+
 /*Стили навигации*/
 
+
 /*Цвет навигации*/
+
 .navbar-default {
-    background-color: #191970;
-    border-color: #191970;
-    border-radius: 0px;
-
-
+  background-color: #191970;
+  border-color: #191970;
+  border-radius: 0px;
 }
+
+
 /* Цвет пунктов навигационного меню */
-.navbar-default .navbar-nav > li > a {
-    color: #ecf0f1;
-    /*font-size: 1.5vw;*/
-    font-size: 20px;
-    font-family: MicraDi, Tahoma, Geneva, sans-serif;
+
+.navbar-default .navbar-nav>li>a {
+  color: #ecf0f1;
+  /*font-size: 1.5vw;*/
+  font-size: 20px;
+  font-family: MicraDi, Tahoma, Geneva, sans-serif;
 }
+
 
 /* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #6495ED;
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #6495ED;
 }
+
 
 /* Цвет полосочек в кнопочке, которая открывает меню */
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ecf0f1;
-}
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
 
 
 /*Оформление футера  компьютерная версия*/
+
+
 /*Для рприжатия его к низу*/
+
 html {
   position: relative;
   min-height: 100%;
 }
+
+
 /*Для рприжатия его к низу*/
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 210px;
 }
+
 footer {
-	background: #DCDCDC;
-	color: dimgray;
-	/*font-size: 11px;*/
+  background: #DCDCDC;
+  color: dimgray;
+  /*font-size: 11px;*/
 }
+
+
 /*Для рприжатия его к низу*/
+
 #footer {
   position: absolute;
   bottom: 0;
@@ -103,34 +125,198 @@ footer {
   background-color: #f5f5f5;
 }
 
+
 /*Для прижатия его к низу*/
+
 #footerMob {
   position: absolute;
   bottom: 0;
   width: 100%;
-   /*Set the fixed height of the footer here*/
+  /*Set the fixed height of the footer here*/
   height: 10px;
   background-color: #f5f5f5;
   /*margin-bottom: 10px;*/
 }
 
+@media (max-width:700px), (max-device-width:700px) {
+  body{
+    margin-bottom: 0px;
+  }
 
+  #footer{
+    height: 0px;
+  }
+
+  #footerMob{
+    background-color: #ffffff;
+  }
+}
 
 a {
-	color: dimgray;
+  color: dimgray;
 }
 
 a:hover {
-	color: #696969;
+  color: #696969;
 }
 
-#sitemap, #contactss{
+#sitemap, #contactss {
   text-align: center;
   font-size: 20px;
 }
 
-.copyright{
+.copyright {
   text-align: center;
   font-size: 17px;
   color: #000000;
+}
+
+#phoneDiv span {
+  font-size: 47px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: Tahoma, MicraDi, Geneva, sans-serif;
+  color: #191970;
+  position: relative;
+  /*top: -18px;*/
+}
+
+#phoneDivMob span {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: Tahoma, MicraDi, Geneva, sans-serif;
+  color: #191970;
+  position: relative;
+}
+
+#phoneDiv {
+  text-align: center;
+}
+
+#phoneDivMob {
+  text-align: center;
+}
+
+#callUs {
+  padding-top: 20px;
+  font-family: MicraDi, Tahoma, Geneva, sans-serif;
+  text-align: center;
+  font-size: 43px;
+  color: #191970;
+}
+
+#callUsMob {
+  padding-top: 20px;
+  font-family: MicraDi, Tahoma, Geneva, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #191970;
+}
+
+#phoneDiv :hover {
+  color: #4169E1;
+}
+
+#phoneDivMob :hover {
+  color: #4169E1;
+}
+
+.po a {
+  color: #191970;
+  text-shadow: 0px 2px 3px #777
+}
+
+.po a:hover {
+  color: #4169E1;
+  text-shadow: 0px 2px 3px #777
+}
+
+
+/*Стили формы Обратной связи Компьютерной версии*/
+
+
+/* form styles */
+
+form .row {
+  display: block;
+  padding: 7px 8px;
+  margin-bottom: 7px;
+}
+
+form .row:hover {
+  background: #f1f7fa;
+}
+
+form label {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 120px;
+  padding: 6px 0;
+  color: #464646;
+  vertical-align: top;
+}
+
+form .req {
+  color: #ca5354;
+}
+
+form .note {
+  font-size: 1.2em;
+  line-height: 1.33em;
+  font-weight: normal;
+  padding: 2px 7px;
+  margin-bottom: 10px;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+}
+
+
+/* placeholder styles: http://stackoverflow.com/a/2610741/477958 */
+
+::-webkit-input-placeholder {
+  color: #aaafbd;
+  font-style: italic;
+}
+
+
+/* WebKit */
+
+:-moz-placeholder {
+  color: #aaafbd;
+  font-style: italic;
+}
+
+
+/* Mozilla Firefox 4 to 18 */
+
+::-moz-placeholder {
+  color: #aaafbd;
+  font-style: italic;
+}
+
+
+/* Mozilla Firefox 19+ */
+
+:-ms-input-placeholder {
+  color: #aaafbd;
+  font-style: italic;
+}
+
+
+/* Internet Explorer 10+ */
+
+form .txt {
+  display: inline-block;
+  padding: 8px 9px;
+  padding-right: 30px;
+  width: 240px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.35em;
+  font-weight: normal;
+  color: #898989;
 }

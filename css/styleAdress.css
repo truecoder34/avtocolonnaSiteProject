@@ -28,11 +28,12 @@
 
 /*стили наполенния страницы adress для мобильной версии*/
 .signMob{
-  font-size: 3.5vw; /* 3% of viewport width */
+  font-size: 15px; /* 3% of viewport width */
   font-family: DS Sofachrome, Tahoma, Geneva, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  background: linear-gradient(to top, #808080, #F5F5F5);
+  background-color: #F5F5F5;
+  /*background: linear-gradient(to top, #808080, #F5F5F5);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: -1px -1px 0, #F5F5F5,
@@ -120,7 +121,19 @@ footer {
   /*margin-bottom: 10px;*/
 }
 
+@media (max-width:700px), (max-device-width:700px) {
+  body{
+    margin-bottom: 0px;
+  }
 
+  #footer{
+    height: 0px;
+  }
+
+  #footerMob{
+    background-color: #ffffff;
+  }
+}
 
 a {
 	color: dimgray;

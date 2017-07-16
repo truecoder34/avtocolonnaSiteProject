@@ -18,17 +18,21 @@
 .directions{
   font-size: 30px ;
   font-family: MicraDi, Tahoma, Geneva, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: bold;
   color: #191970;
-  text-shadow: 0px 2px 3px #777
+  text-shadow: 0px 2px 3px #777;
+  text-align:center;
+  padding-top: 20px;
 }
 
 .signMob{
-  font-size: 3.5vw; /* 3% of viewport width */
+  font-size: 15px; /* 3% of viewport width */
   font-family: DS Sofachrome, Tahoma, Geneva, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  background: linear-gradient(to top, #808080, #F5F5F5);
+  background-color: #F5F5F5;
+  /*background: linear-gradient(to top, #808080, #F5F5F5);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: -1px -1px 0, #F5F5F5,
@@ -38,9 +42,11 @@
 .directionsMob{
   font-size: 15px;
   font-family: MicraDi, Tahoma, Geneva, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: bold;
   color: #191970;
   text-shadow: 0px 2px 3px #777;
+  text-align:center;
 }
 
 /*Стили навигации*/
@@ -133,7 +139,7 @@ a:hover {
 }
 
 
-
+/*Стили слайдера фотографий*/
 .carousel-inner{
   width:100%;
   max-height: 650px !important;
@@ -141,4 +147,38 @@ a:hover {
 .imgSlider{
   padding-left:0 !important;
   padding-right:0 !important;
+}
+
+
+/*Стили блока с приемущечтывами*/
+#titleSign{
+  font-size: 30px;
+}
+
+#smallSign{
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+#pluses{
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+#mobPriem{
+  padding-top: 20px;
+}
+
+@media (max-width:700px), (max-device-width:700px) {
+  body{
+    margin-bottom: 0px;
+  }
+
+  #footer{
+    height: 0px;
+  }
+
+  #footerMob{
+    background-color: #ffffff;
+  }
 }
