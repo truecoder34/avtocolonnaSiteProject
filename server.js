@@ -8,6 +8,25 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static(__dirname)); // Путь относительно которого нудно искать наши файлы. Задаем папку в которой искать файлики
 
+// Непосредственно блок подсоединения базы данных sql
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: ""
+});
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+/*-----Конец блока подкдючения к sql------*/
+
+/*----Блок подключения непосредственно к нашей базе данных по назанию orders :
+  "use orders" - указываем что работаем с этой базой данных----------*/
+con.query("use recievedmail", function (err, result) {
+    if (err) throw err;
+    console.log("use ok"); // выводим сообщение в консоль, что все хорошо  и к базе данных подключилось
+  });
+/*----Конец блока подключения----------*/
 
 /*------реакция на get запрос. Обращаемся к самому сайту и послыаем пользователю нашу верстку.
 Делаем это чтобы на сайте прогрузилась вся наша верстка------*/
@@ -17,6 +36,7 @@ app.get("/", function(req,res){
 })
 /*------Конец этого блока------*/
 
+ /*------  необходимая и отображается на сайте требуемая страница ------*/
 app.get("/contacts", function(req,res){
   res.setHeader("Content-Type","text/html");
   res.sendFile(__dirname +"/contacts.html");
@@ -26,6 +46,23 @@ app.get("/adress", function(req,res){
   res.setHeader("Content-Type","text/html");
   res.sendFile(__dirname +"/adress.html");
 })
+/*------Конец этого блока------*/
+
+/*-----Реализуем получение данных о клиенете с сайта (форм для ввода) на сервак. А с сервака идет в sql базу данных-----*/
+app.post("/sendMail", function(req,res){
+ var number =  req.body.name + req.body.email +req.body.phone + req.body.subject + req.body.message;
+ console.log(number);
+   /*обращаемся к базе данных, посылая запрос на вставку записис в базу.
+   Сначала прописываем поля, куда вставить, потом непосредственно значения для вставки */
+   con.query("INSERT INTO recievedmail (nameOfUser,emailAdress,phoneNumber, themeOfLetter, textOfLetter) VALUES( \""+ req.body.name +"\",\""+ req.body.email +"\",\""
+   + req.body.phone +"\",\""  + req.body.subject +"\",\"" + req.body.message + "\");", function(err, result) {
+     if (err) throw err;
+     console.log("INSERT ok");
+   });
+   res.setHeader("Content-Type","text/html");
+   res.sendFile(__dirname +"/contacts.html");
+})
+/*------Конец этого блока------*/
 
 
 
