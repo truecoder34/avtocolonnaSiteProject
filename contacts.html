@@ -131,6 +131,8 @@
         <!-- <a href="tel:12345678" ><img id="phoneImg" src="img/phone2.png"><span>+7(927)254-00-30</span></a> -->
         <a href="tel:+7(927)254-00-30"><span>+7(927)254-00-30</span></a>
       </div>
+      <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" id="callUs">ИЛИ</div>
+      <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" id="callUs">Оставьте письмо и мы свяжемся с вами сами!</div>
     </div>
   </div>
 
@@ -142,22 +144,21 @@
         <!-- <a href="tel:12345678" ><img id="phoneImg" src="img/phone2.png"><span>+7(927)254-00-30</span></a> -->
         <a href="tel:+7(927)254-00-30"><span>+7(927)254-00-30</span></a>
       </div>
+      <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="callUsMob">ИЛИ</div>
+      <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="callUsMob">Оставьте письмо и мы свяжемся с вами сами!</div>
+
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" id="callUs">ИЛИ</div>
-    </div>
-  </div>
+
 
   <!-- Форма обратной связи Компьютерная версия -->
   <div class="container-fluid">
     <div class="row">
       <!-- <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div> -->
-      <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" style="text-align:center">
+      <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" style="text-align:center; background-color:#f5f5f5">
         <div id="w">
-          <h1 id="callUs">Оставьте письмо и мы свяжемся с вами сами!</h1>
+          <!-- <h1 id="callUs">Оставьте письмо и мы свяжемся с вами сами!</h1> -->
           <form id="contactform" name="contact" method="post" action="/sendMail">
             <p class="note"><span class="req">*</span> Поля со звездочкой обязательны для заполнения</p>
             <div class="row">
@@ -195,7 +196,53 @@
     </div>
   </div>
 
-  <div style ="height:20px">
+  <!-- Форма обратной связи Мобильная версия -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div> -->
+      <div class="hidden-lg hidden-md col-sm-12 col-xs-12" style="text-align:center; background-color:#f5f5f5">
+        <div id="w">
+          <!-- <h1 id="callUs">Оставьте письмо и мы свяжемся с вами сами!</h1> -->
+          <form id="contactform" name="contact" method="post" action="/sendMail">
+            <p class="note"><span class="req">*</span> Поля со звездочкой обязательны для заполнения</p>
+            <div class="row">
+              <label for="name">Ваше Имя <span class="req">*</span></label>
+              <input type="text" name="name" id="name" class="txtMob" tabindex="1" placeholder="Стив Джобс" required>
+            </div>
+
+            <div class="row">
+              <label for="email">E-mail Адрес <span class="req">*</span></label>
+              <input type="email" name="email" id="email" class="txtMob" tabindex="2" placeholder=" address@mail.ru" required>
+            </div>
+
+            <div class="row">
+              <label for="phone">Номер телефона <span class="req">*</span></label>
+              <input type="phone" name="phone" id="phone" class="txtMob" tabindex="3" placeholder="+79XXXXXXXXX" required>
+            </div>
+
+            <div class="row">
+              <label for="subject">Тема <span class="req">*</span></label>
+              <input type="text" name="subject" id="subject" class="txtMob" tabindex="4" placeholder="Тема письма" required>
+            </div>
+
+            <div class="row">
+              <label for="message">Сообщение <span class="req">*</span></label>
+              <textarea name="message" id="messageMob" class="txtareaMob" tabindex="5" required></textarea>
+            </div>
+
+            <div class="center">
+              <input type="submit" id="submitbtnMob" name="submitbtn" tabindex="6" value="Отправить Сообщение">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div> -->
+    </div>
+  </div>
+
+
+<!-- Полоска - отсутп между футером и формой обратной связи -->
+  <div style ="height:20px; background-color:#f5f5f5">
 
   </div>
 
@@ -237,8 +284,8 @@
             <h1 style="font-size:25px">ООО Автоколонна №1686</h1>
             <div><a href="/">Главная</a></div>
             <div><a href="/contacts">Контакты</a></div>
-            <div><a href="/tracking">Адресс</a></div>
-            <div><a href="/">Отслеживание груза</a></div>
+            <div><a href="/adress">Адресс</a></div>
+            <div><a href="/tracking">Отслеживание груза</a></div>
           </div>
           <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="contactss">
             <h1 style="font-size:25px">Контакты</h1>

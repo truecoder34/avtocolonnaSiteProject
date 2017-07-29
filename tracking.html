@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Адрес</title>
+  <title>Главная</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/styleAdress.css" rel="stylesheet">
+  <link href="css/styleTracking.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -86,66 +86,29 @@
   </div>
 
   <!--Тело сайта-->
-  <!--Адрес  и карта компьбтерная версия-->
+
+  <!-- поле для ввода трекинг номера Компьютерная версия -->
   <div class="container-fluid">
-
     <div class="row">
-
-      <div class="col-lg-6 col-md-6 hidden-sm hidden-xs" style="margin-left:10px; text-align:center">
-
-        <div class="spisok">
-          <div class="adress">Находимся по адресу: </div>
-          <div class="adress">Волгоградская область,</div>
-          <div class="adress">город Волгоград,</div>
-          <div class="adress">ул. Лесогорская, д. 83</div>
-        </div>
-
+      <div class="col-lg-12 col-md-12 hidden-sm hidden-xs" id = "infoContent">
+        Для того чтобы узнать местоположение вашего груза введите трекинг-номер, полученый при заключении договора.
       </div>
-      <!-- карта для компбютерной версии и планшета -->
-      <div class="col-lg-5 col-md-5 hidden-sm hidden-xs" style="margin-right:10px">
-        <div class="map">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a815f0a748cc9d8e5e54064ef266150c0f2ce5e21c7c8e288fe91a3c1598a43&amp;width=100%25&amp;height=428&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
+
+      <div class="col-lg-12 col-md-12 hidden-sm hidden-xs " style="display:inline-block; margin-top:20px" id = "infoContent">
+        <form  method="post" action="/checkTrackingCode">
+            <b id = "placeForTrackNumber">Трекинг-номер</b><input type="text" name="trackingCode" size="50" style="border-radius:12px; border-color:#191970">
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+        </form>
       </div>
-      <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
+
+      <div class="col-lg-12 col-md-12 hidden-sm hidden-xs"> </div>
+
     </div>
-
-  </div>
-
-  <!-- Мобильная версия наполнения -->
-  <div class="container-fluid adressMob">
-
-    <div class="row">
-      <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
-      <div class="hidden-lg hidden-md col-xs-12 col-sm-12">Находимся по адрессу:</div>
-      <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
-    </div>
-
-    <div class="row">
-      <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
-      <div class="hidden-lg hidden-md col-xs-12 col-sm-12">Волгоградская область, город Волгоград, ул. Лесогорская, д.83</div>
-      <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
-    </div>
-
-  </div>
-
-  <!-- Расположение карты при мобильной версии -->
-  <div class="container-fluid mapMob">
-
-    <div class="row">
-      <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
-      <div class="hidden-lg hidden-md col-xs-12 col-sm-12">
-        <div class="map">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a815f0a748cc9d8e5e54064ef266150c0f2ce5e21c7c8e288fe91a3c1598a43&amp;width=100%25&amp;height=428&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
-      </div>
-      <!-- <div class="hidden-lg hidden-md col-xs-2 col-sm-2"> </div> -->
-    </div>
-
   </div>
 
 
-  <div style="height:100px"> </div>
+
 
 
   <footer>
@@ -171,38 +134,37 @@
         </div>
         <div class="row">
           <div class="col-lg-12 col-md-12 hidden-sm hidden-xs copyright">
-             © Оформление сайта. ООО Автоколонна №1686, 2017
+            © Оформление сайта. ООО Автоколонна №1686, 2017
           </div>
         </div>
       </div>
     </div>
 
-<!-- Подвал для мобильной версии -->
-<div id="footerMob">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="sitemap">
-        <h1 style="font-size:25px">ООО Автоколонна №1686</h1>
-        <div><a href="/">Главная</a></div>
-        <div><a href="/contacts">Контакты</a></div>
-        <div><a href="/adress">Адресс</a></div>
-        <div><a href="/tracking">Отслеживание груза</a></div>
-      </div>
-      <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="contactss">
-        <h1 style="font-size:25px">Контакты</h1>
-        <div>ak1686@insatcom-v.ru</div>
-        <div>8-8442-54-70-66 (Приемная)</div>
-        <div>8-8442-78-70-11 (Диспетчерская)</div>
-        <div>8-8442-78-66-18 (Отдел кадров)</div>
-      </div>
-      <div class="hidden-lg hidden-md col-sm-12 col-xs-12 copyright">
-         © Оформление сайта. ООО Автоколонна №1686, 2017
+    <!-- Подвал для мобильной версии -->
+    <div id="footerMob">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="sitemap">
+            <h1 style="font-size:25px">ООО Автоколонна №1686</h1>
+            <div><a href="/">Главная</a></div>
+            <div><a href="/contacts">Контакты</a></div>
+            <div><a href="/tracking">Адресс</a></div>
+            <div><a href="/">Отслеживание груза</a></div>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="contactss">
+            <h1 style="font-size:25px">Контакты</h1>
+            <div>ak1686@insatcom-v.ru</div>
+            <div>8-8442-54-70-66 (Приемная)</div>
+            <div>8-8442-78-70-11 (Диспетчерская)</div>
+            <div>8-8442-78-66-18 (Отдел кадров)</div>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12 copyright">
+            © Оформление сайта. ООО Автоколонна №1686, 2017
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   </footer>
-
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

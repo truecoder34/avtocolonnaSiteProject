@@ -314,9 +314,43 @@ form .txt {
   display: inline-block;
   padding: 8px 9px;
   padding-right: 30px;
-  width: 240px;
+  width: 400px;
   font-family: 'Oxygen', sans-serif;
   font-size: 1.35em;
   font-weight: normal;
   color: #898989;
+}
+
+#message{
+    width: 400px;
+    height: 300px;
+}
+
+#submitbtn{
+   margin-left: 120px;
+    width: 400px;
+    height: 30px;
+}
+
+
+.txtMob{
+  display: inline-block;
+  padding: 8px 9px;
+  padding-right: 30px;
+  width: 230px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.35em;
+  font-weight: normal;
+  color: #898989;
+}
+
+#messageMob{
+  width: 230px;
+  height: 200px;
+}
+
+#submitbtnMob{
+  /*margin-left: 20px;*/
+   width: 290px;
+   height: 30px;
 }
