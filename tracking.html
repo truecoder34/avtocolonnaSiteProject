@@ -95,17 +95,30 @@
       </div>
 
       <div class="col-lg-12 col-md-12 hidden-sm hidden-xs " style="display:inline-block; margin-top:20px" id = "infoContent">
-        <form  method="post" action="/checkTrackingCode">
-            <b id = "placeForTrackNumber">Трекинг-номер</b><input type="text" name="trackingCode" size="50" style="border-radius:12px; border-color:#191970">
-            <input type="submit" value="Отправить">
+        <!-- <form  method="post" action="/checkTrackingCode"> -->
+          <!-- <form  method="post"> -->
+            <b >Трекинг-номер</b><input type="text" name="trackingCode" size="50" style="border-radius:12px; border-color:#191970" id = "placeForTrackNumber">
+            <input type="submit" value="Отправить" id = "sendCode">
             <input type="reset" value="Очистить">
-        </form>
+        <!-- </form> -->
       </div>
 
       <div class="col-lg-12 col-md-12 hidden-sm hidden-xs"> </div>
 
     </div>
   </div>
+
+  <!-- Таблица с инофрмацией о грузе. Появляется после того как трекинг номер введен верно -->
+  <div class="container">
+    <div class="row clearfix">
+		<div class="col-md-12 column">
+			<table class="table table-bordered table-hover" id="tab_logic">
+
+			</table>
+		</div>
+	</div>
+
+</div>
 
 
 
@@ -170,6 +183,7 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <!-- <script src="scrypt/jquery-3.2.1.min.js"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="scrypt/fillerOfTable.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.js"></script>
 </body>

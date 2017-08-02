@@ -164,5 +164,14 @@ a:hover {
 
 #placeForTrackNumber{
 
-  margin-right: 20px;
+  margin-left: 20px;
 }
+
+/*Стили таблицы */
+/*.tableVisible{
+  padding-top: 30px;
+}
+
+.tableUnvisible{
+  display: none;
+}*/
